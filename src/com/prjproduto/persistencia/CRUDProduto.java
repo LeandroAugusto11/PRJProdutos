@@ -28,7 +28,7 @@ public class CRUDProduto {
     		Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
     		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbproduto?serverTimezone=UTC","root","");
     		
-    		String consulta = "INSERT INTO tbcadastrarproduto(nome,descricao,fabricante,quantidade,preco)values(?,?,?,?)";
+    		String consulta = "INSERT INTO tbcadastrarproduto(nome,descricao,fabricante,quantidade,preco)values(?,?,?,?,?)";
     		
     		pst = con.prepareStatement(consulta);
     		
